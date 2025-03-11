@@ -7,7 +7,13 @@ class Solution {
 
         for(int i = 0 ; i < nums.length ; i++) {
 
+            int diff =  target - nums[i];
 
+            if (map.containsKey(diff)) {
+                int index = map.get(diff);
+                res[0] = i;
+                res[1] = index;
+            }
         }
 
         return res;
