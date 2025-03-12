@@ -13,6 +13,9 @@ class Solution {
                 int index = map.get(diff);
                 res[0] = i;
                 res[1] = index;
+            } else {
+
+                map.put(nums[i], i);
             }
         }
 
