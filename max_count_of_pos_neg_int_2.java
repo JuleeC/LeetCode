@@ -15,6 +15,7 @@ class Solution {
         //method that checks what number is higher
         return Math.max(min,max);
 
-
+        // 0 aint pos or neg
+        //return max of negative/postive integers in an array
     }
 }
