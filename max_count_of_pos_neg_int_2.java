@@ -12,5 +12,9 @@ class Solution {
                 max++;
             }
         }
+        //method that checks what number is higher
+        return Math.max(min,max);
 
+
+    }
 }
