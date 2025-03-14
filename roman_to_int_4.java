@@ -7,7 +7,12 @@ class Solution {
           //get current value from roman number to an integer
           int currentVal = roman_handler(s.charAt(i));
 
-
+          //check wether i is bigger or i+1 is bigger
+          if (i < n - 1 && currentVal < getValue(s.charAt(i + 1))) {
+              resolution -= currentVal;
+          } else {
+              resolution += currentVal;
+          }
       }
 
       return resolution;
