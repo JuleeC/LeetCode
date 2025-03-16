@@ -13,6 +13,17 @@ class Solution {
         ListNode bot = new ListNode();
         ListNode cur = bot;
 
+        while (list1 != null && list2 != null) {
+            if (list1.val > list2.val) {
+                cur.next = list2;
+                list2 = list2.next;
+            } else {
+                cur.next = list1;
+                list1 = list1.next;
+            }
+            cur = cur.next;
+        }
+
 
 
 
