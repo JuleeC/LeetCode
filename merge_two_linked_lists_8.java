@@ -24,7 +24,10 @@ class Solution {
             cur = cur.next;
         }
 
+        if(list1 != null) cur.next = list1;
+        else if(list2 !=null) cur.next = list2;
 
+        return bot.next;
 
 
     }
