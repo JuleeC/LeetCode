@@ -9,6 +9,9 @@ class Solution {
         for(Map.Entry<Integer, Integer> entry : res.entrySet()) {
             arr.add(new int[] {entry.getValue(), entry.getKey()});
         }
+        arr.sort((a,b) -> b[0] -a[0]);
+
+        int[] ans = new int[k];
 
 
     }
