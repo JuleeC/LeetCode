@@ -12,7 +12,10 @@ class Solution {
         arr.sort((a,b) -> b[0] -a[0]);
 
         int[] ans = new int[k];
-
+        for(int i = 0; i < k; i++) {
+            ans[i] = arr.get(i)[1];
+        }
+        return ans;
 
     }
 }
