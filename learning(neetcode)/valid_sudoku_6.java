@@ -16,7 +16,14 @@ class Solution {
         for(int col = 0; col < 9; col++) {
             Set<Character> seen_col = new HashSet<>();
             //iterate through a row to check if there are duples
+            for(int i = 0; i < 9;i++) {
+                if(board[i][col] == '.') continue;
+                if(seen_col.contains(board[i][col])) return false;
+                seen_col.add(board[i][col]);
+            }
 
+                }
+            }
         }
 
 
