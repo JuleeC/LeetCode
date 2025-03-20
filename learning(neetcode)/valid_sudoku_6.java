@@ -26,6 +26,11 @@ class Solution {
         for(int nines = 0; nines < 9; nines++) {
             Set<Character> boxes = new HashSet<>();
             for(int i =0; i<3;i++) {
+                for(int j = 0; j<3; j++) {
+                    int row = (nines / 3) * 3 + i;
+                    int col = (nines % 3) * 3 + j;
+                    if(board[row][col]=='.') continue;
+                    if(boxes.contains(board[row][col])) return false;
 
                 }
             }
