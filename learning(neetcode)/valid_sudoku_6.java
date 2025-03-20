@@ -21,6 +21,11 @@ class Solution {
                 if(seen_col.contains(board[i][col])) return false;
                 seen_col.add(board[i][col]);
             }
+        }
+        //check if in one box, there arent a set of the same numbers
+        for(int nines = 0; nines < 9; nines++) {
+            Set<Character> boxes = new HashSet<>();
+            for(int i =0; i<3;i++) {
 
                 }
             }
