@@ -31,7 +31,7 @@ class Solution {
                     int col = (nines % 3) * 3 + j;
                     if(board[row][col]=='.') continue;
                     if(boxes.contains(board[row][col])) return false;
-
+                    boxes.add(board[row][col]);
                 }
             }
         }
