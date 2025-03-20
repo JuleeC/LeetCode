@@ -11,6 +11,11 @@ class Solution {
                 if(seen_row.contains(board[row][i])) return false;
                 seen_row.add(board[row][i]);
             }
+        }
+        //look if there are same numbers within one column
+        for(int col = 0; col < 9; col++) {
+            Set<Character> seen_col = new HashSet<>();
+            //iterate through a row to check if there are duples
 
         }
 
