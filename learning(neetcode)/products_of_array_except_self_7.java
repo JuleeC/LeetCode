@@ -5,7 +5,8 @@ class Solution {
         for(int i = 0; i < nums.length; i++) {
             dummy = 1;
             for(int j = 0; j < nums.length; j++) {
-
+                if(i != j) {
+                    dummy *= nums[j];
                 }
             }
             ans[i] =dummy;
