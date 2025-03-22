@@ -5,6 +5,6 @@ class Solution {
             s = s.replace("{}", "");
             s = s.replace("[]", "");
         }
-
+        return s.isEmpty();
     }
 }
