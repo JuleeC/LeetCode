@@ -12,7 +12,7 @@ public class Solution {
                 streak++;
                 curr++;
             }
-
+            res = Math.max(res, streak);
         }
         return res;
     }
