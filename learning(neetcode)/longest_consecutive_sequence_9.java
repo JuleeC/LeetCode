@@ -7,6 +7,11 @@ public class Solution {
         }
 
         for (int num : nums) {
+            int streak = 0, curr = num;
+            while (store.contains(curr)) {
+                streak++;
+                curr++;
+            }
 
         }
         return res;
