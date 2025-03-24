@@ -6,6 +6,6 @@ public class Solution {
                 newStr.append(Character.toLowerCase(c));
             }
         }
-
+        return newStr.toString().equals(newStr.reverse().toString());
     }
 }
