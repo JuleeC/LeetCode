@@ -7,6 +7,6 @@ public class Solution {
             profit = Math.max(profit, sell - min_extreme);
             min_extreme = Math.min(min_extreme, sell);
         }
-
+        return profit;
     }
 }
