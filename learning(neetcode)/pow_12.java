@@ -10,6 +10,6 @@ class Solution {
         }
 
         if(n < 0) {return 1/res;}
-
+        else {return res;}
     }
 }
