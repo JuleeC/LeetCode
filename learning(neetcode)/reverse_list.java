@@ -20,6 +20,6 @@ class Solution {
         }
         head.next = null;
 
-
+        return newNode;
     }
 }
