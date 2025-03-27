@@ -13,6 +13,11 @@ class Solution {
     public ListNode reverseList(ListNode head) {
         if(head == null) {return null;}
 
+        ListNode newNode = head;
+        if(head.next != null) {
+            newNode = reverseList(head.next);
+            head.next.next = head;
+        }
 
     }
 }
