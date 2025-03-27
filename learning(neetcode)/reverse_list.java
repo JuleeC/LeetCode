@@ -18,6 +18,8 @@ class Solution {
             newNode = reverseList(head.next);
             head.next.next = head;
         }
+        head.next = null;
+
 
     }
 }
