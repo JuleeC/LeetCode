@@ -15,7 +15,12 @@ public class Solution {
             int j = i;
             while (str.charAt(j) != '#') {
                 j++;
-
+            }
+            int length = Integer.parseInt(str.substring(i, j));
+            i = j + 1;
+            j = i + length;
+            res.add(str.substring(i, j));
+            i = j;
         }
         return res;
     }
