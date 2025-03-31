@@ -9,6 +9,10 @@ public class Solution {
     }
 
     public List<String> decode(String str) {
+        List<String> res = new ArrayList<>();
+        int i = 0;
 
+        }
+        return res;
     }
 }
