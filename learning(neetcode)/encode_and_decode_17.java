@@ -5,6 +5,10 @@ public class Solution {
         for (String s : strs) {
             res.append(s.length()).append('#').append(s);
         }
+        return res.toString();
+    }
+
+    public List<String> decode(String str) {
 
     }
 }
