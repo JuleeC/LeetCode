@@ -8,6 +8,8 @@ public class Solution {
                 int[] pair = stack.pop();
                 res[pair[1]] = i - pair[1];
             }
+            stack.push(new int[]{temperatures[i], i});
+        }
 
     }
 }
