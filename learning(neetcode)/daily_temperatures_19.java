@@ -4,6 +4,7 @@ public class Solution {
         Stack<int[]> stack = new Stack<>(); // pair: [temp, index]
 
         for (int i = 0; i < temperatures.length; i++) {
+            while (!stack.isEmpty() && t > stack.peek()[0]) {
 
     }
 }
