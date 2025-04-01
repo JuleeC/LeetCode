@@ -10,6 +10,6 @@ public class Solution {
             }
             stack.push(new int[]{temperatures[i], i});
         }
-
+        return res;
     }
 }
