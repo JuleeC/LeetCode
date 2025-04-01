@@ -3,6 +3,7 @@ public class Solution {
         int[] res = new int[temperatures.length];
         Stack<int[]> stack = new Stack<>(); // pair: [temp, index]
 
+        for (int i = 0; i < temperatures.length; i++) {
 
     }
 }
