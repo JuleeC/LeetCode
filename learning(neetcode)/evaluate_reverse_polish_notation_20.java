@@ -8,6 +8,8 @@ class Solution {
                 int a = stack.pop();
                 int b = stack.pop();
                 stack.push(b - a);
+            } else if (c.equals("*")) {
+                stack.push(stack.pop() * stack.pop());
 
             } else {
                 stack.push(Integer.parseInt(c));
