@@ -4,7 +4,7 @@ public class Solution {
         for (int i = 0; i < numbers.length; i++) {
             int tmp = target - numbers[i];
             if (mp.containsKey(tmp)) {
-
+                return new int[] { mp.get(tmp), i + 1 };
             }
             mp.put(numbers[i], i + 1);
         }
