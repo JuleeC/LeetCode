@@ -14,6 +14,9 @@ public class Solution {
         HashSet<ListNode> seen = new HashSet<>();
         ListNode cur = head;
         while (cur != null) {
+            if (seen.contains(cur)) {
+                return true;
+            }
 
         }
         return false;
