@@ -11,6 +11,8 @@
 
 public class Solution {
     public boolean hasCycle(ListNode head) {
+        HashSet<ListNode> seen = new HashSet<>();
+        ListNode cur = head;
 
     }
 }
