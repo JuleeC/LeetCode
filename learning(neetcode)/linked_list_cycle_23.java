@@ -17,7 +17,8 @@ public class Solution {
             if (seen.contains(cur)) {
                 return true;
             }
-
+            seen.add(cur);
+            cur = cur.next;
         }
         return false;
     }
