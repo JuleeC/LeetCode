@@ -16,7 +16,13 @@ class MinStack {
     public int top() {
         return stack.peek();
     }
+    public int getMin() {
+        Stack<Integer> tmp = new Stack<>();
+        int mini = stack.peek();
 
+
+
+        return mini;
 
     }
 
