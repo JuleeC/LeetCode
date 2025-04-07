@@ -13,6 +13,10 @@ class MinStack {
         stack.pop();
     }
 
+    public int top() {
+        return stack.peek();
+    }
+
 
     }
 
