@@ -25,7 +25,9 @@ class MinStack {
             tmp.push(stack.pop());
         }
 
-
+        while (!tmp.isEmpty()) {
+            stack.push(tmp.pop());
+        }
 
         return mini;
 
