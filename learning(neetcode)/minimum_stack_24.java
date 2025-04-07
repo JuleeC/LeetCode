@@ -20,6 +20,11 @@ class MinStack {
         Stack<Integer> tmp = new Stack<>();
         int mini = stack.peek();
 
+        while (!stack.isEmpty()) {
+            mini = Math.min(mini, stack.peek());
+            tmp.push(stack.pop());
+        }
+
 
 
         return mini;
