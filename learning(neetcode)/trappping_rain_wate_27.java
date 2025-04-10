@@ -10,6 +10,9 @@ public class Solution {
             int leftMax = height[i];
             int rightMax = height[i];
 
+            for (int j = 0; j < i; j++) {
+                leftMax = Math.max(leftMax, height[j]);
+            }
 
 
             res += Math.min(leftMax, rightMax) - height[i];
