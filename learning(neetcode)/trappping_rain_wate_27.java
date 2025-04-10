@@ -6,6 +6,14 @@ public class Solution {
         int n = height.length;
         int res = 0;
 
+        for (int i = 0; i < n; i++) {
+            int leftMax = height[i];
+            int rightMax = height[i];
 
+
+
+            res += Math.min(leftMax, rightMax) - height[i];
+        }
+        return res;
     }
 }
