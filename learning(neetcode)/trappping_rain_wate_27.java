@@ -13,7 +13,9 @@ public class Solution {
             for (int j = 0; j < i; j++) {
                 leftMax = Math.max(leftMax, height[j]);
             }
-
+            for (int j = i + 1; j < n; j++) {
+                rightMax = Math.max(rightMax, height[j]);
+            }
 
             res += Math.min(leftMax, rightMax) - height[i];
         }
