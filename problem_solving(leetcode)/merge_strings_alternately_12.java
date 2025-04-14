@@ -7,6 +7,10 @@ class Solution {
         for(int i = 0; i < Math.max(word1_l,word2_l); i++) {
             if(i < word1_l) {
                 res.append(word1.charAt(i));
-
+            } if(i < word2_l){
+                res.append(word2.charAt(i));
+            }
+        }
+        return res.toString();
     }
 }
