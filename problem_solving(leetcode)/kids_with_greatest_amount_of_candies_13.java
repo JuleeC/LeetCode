@@ -7,6 +7,10 @@ class Solution {
         for(int i : candies) {
             max = Math.max(i,max);
         }
+        ArrayList<Boolean> res = new ArrayList<>();
+        for(int i : candies) {
 
+        }
+        return res;
     }
 }
