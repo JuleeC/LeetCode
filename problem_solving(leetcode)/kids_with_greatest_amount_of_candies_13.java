@@ -3,6 +3,10 @@ class Solution {
         if(candies == null) {
             return new ArrayList<>();
         }
+        int max = 0;
+        for(int i : candies) {
+            max = Math.max(i,max);
+        }
 
     }
 }
