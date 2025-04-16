@@ -4,6 +4,8 @@ class Solution {
             return 1;
         } else if(Math.abs(z-x) == Math.abs(z-y)) {
             return 0;
-
+        } else {
+            return 2;
+        }
     }
 }
