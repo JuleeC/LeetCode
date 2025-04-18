@@ -10,6 +10,9 @@ public class Solution {
             int count = 1;
             char prevChar = result.charAt(0);
 
+            for (int j = 1; j < result.length(); j++) {
+                char currentChar = result.charAt(j);
 
+               
     }
 }
