@@ -6,6 +6,10 @@ public class Solution {
 
         for (int i = 2; i <= n; i++) {
 
-            
+            StringBuilder sb = new StringBuilder();
+            int count = 1;
+            char prevChar = result.charAt(0);
+
+
     }
 }
