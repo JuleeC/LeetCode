@@ -22,6 +22,12 @@ public class Solution {
                 }
             }
 
-           
+            // Append the last group
+            sb.append(count).append(prevChar);
+
+            result = sb.toString(); // Prepare for next iteration
+        }
+
+        return result;
     }
 }
