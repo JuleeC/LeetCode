@@ -13,6 +13,15 @@ public class Solution {
             for (int j = 1; j < result.length(); j++) {
                 char currentChar = result.charAt(j);
 
-               
+                if (currentChar == prevChar) {
+                    count++;
+                } else {
+                    sb.append(count).append(prevChar);
+                    prevChar = currentChar;
+                    count = 1;
+                }
+            }
+
+           
     }
 }
