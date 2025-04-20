@@ -6,7 +6,10 @@ class Solution {
         int res = 0, count = 0;
 
         for (int i = 0; i < answers.length; i++) {
-
+            if (answers[i] == 0) {
+                res++;
+            }
+            }
         }
         return res;
     }
