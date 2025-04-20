@@ -11,6 +11,8 @@ class Solution {
             }else if (i == 0 || answers[i] != answers[i - 1] || count == 0) {
                 res += answers[i] + 1;
                 count = answers[i];
+            }else {
+                count--;
             }
         }
         return res;
