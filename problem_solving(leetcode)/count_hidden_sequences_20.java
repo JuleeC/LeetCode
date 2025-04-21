@@ -10,6 +10,6 @@ class Solution {
                 return 0;
             }
         }
-
+        return (upper - lower) - (y - x) + 1;
     }
 }
