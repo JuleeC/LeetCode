@@ -8,7 +8,11 @@ class Solution {
 
     }
     public int gcd_checker(int s1,int s2) {
-
+        if(s2 == 0) {
+            return s1;
+        } else {
+            return gcd_checker(s2, s1 % s2);
+        }
 
     }
 }
