@@ -6,6 +6,10 @@ class Solution {
             dummy += i;
             x = Math.min(x, dummy);
             y = Math.max(y, dummy);
+            if (y - x > upper - lower) {
+                return 0;
+            }
+        }
 
     }
 }
