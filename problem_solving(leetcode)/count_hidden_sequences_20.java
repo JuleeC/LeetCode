@@ -4,5 +4,8 @@ class Solution {
         int x = 0, y = 0, dummy = 0;
         for (int i : differences) {
             dummy += i;
+            x = Math.min(x, dummy);
+            y = Math.max(y, dummy);
 
+    }
 }
