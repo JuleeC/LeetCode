@@ -14,6 +14,17 @@ class Solution {
             for (int i = div * 2; i < 10001; i += div) {
                 for (int bars = 0; bars < 13; bars++) {
                     if (cnt[div][bars] > 0)
+                        cnt[i][bars + 1] += cnt[div][bars];
+                }
+            }
+        }
+    }
 
+    public int idealArrays(int n, int maxValue) {
+        int res = 0;
+        for (int i = 1; i <= maxValue; i++) {
+            for (int bars = 0; bars < Math.min(14, n); bars++) {
+
+    }
 
 }
