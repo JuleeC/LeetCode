@@ -12,6 +12,8 @@ class Solution {
         for (int div = 1; div < 10001; div++) {
             cnt[div][0]++;
             for (int i = div * 2; i < 10001; i += div) {
+                for (int bars = 0; bars < 13; bars++) {
+                    if (cnt[div][bars] > 0)
 
 
 }
