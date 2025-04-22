@@ -9,6 +9,9 @@ class Solution {
                 comb[s][r] = (r == 0 || r == s) ? 1 : (comb[s - 1][r - 1] + comb[s - 1][r]) % MOD;
             }
         }
+        for (int div = 1; div < 10001; div++) {
+            cnt[div][0]++;
+            for (int i = div * 2; i < 10001; i += div) {
 
 
 }
