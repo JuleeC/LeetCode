@@ -6,3 +6,9 @@ class Solution {
     public Solution() {
         for (int s = 0; s < 10001; s++) {
             for (int r = 0; r <= Math.min(s, 13); r++) {
+                comb[s][r] = (r == 0 || r == s) ? 1 : (comb[s - 1][r - 1] + comb[s - 1][r]) % MOD;
+            }
+        }
+
+
+}
