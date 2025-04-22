@@ -24,7 +24,10 @@ class Solution {
         int res = 0;
         for (int i = 1; i <= maxValue; i++) {
             for (int bars = 0; bars < Math.min(14, n); bars++) {
-
+                res = (int)((res + 1L * cnt[i][bars] * comb[n - 1][bars]) % MOD);
+            }
+        }
+        return res;
     }
 
 }
