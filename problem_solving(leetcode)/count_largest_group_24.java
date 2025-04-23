@@ -9,6 +9,9 @@ class Solution {
                 key += i_zero % 10;
                 i_zero = i_zero / 10;
             }
+            map.put(key,map.getOrDefault(key,0) +1);
+            max = Math.max(max,map.get(key));
+        }
 
 
     }
