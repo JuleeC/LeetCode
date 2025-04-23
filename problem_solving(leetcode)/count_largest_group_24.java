@@ -12,6 +12,8 @@ class Solution {
             map.put(key,map.getOrDefault(key,0) +1);
             max = Math.max(max,map.get(key));
         }
+        int count = 0;
+        for(Map.Entry<Integer, Integer> pairs : map.entrySet()){
 
 
     }
