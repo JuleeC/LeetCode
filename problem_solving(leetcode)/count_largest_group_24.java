@@ -14,7 +14,11 @@ class Solution {
         }
         int count = 0;
         for(Map.Entry<Integer, Integer> pairs : map.entrySet()){
-
+            if(pairs.getValue() == max) {
+                count++;
+            }
+        }
+        return count;
 
     }
 }
