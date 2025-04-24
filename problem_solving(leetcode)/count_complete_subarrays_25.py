@@ -8,4 +8,6 @@ class Solution:
             if left > 0:
                 remove = nums[left -1]
                 cnt[remove] -= 1
+                if cnt[remove] == 0:
+                    cnt.pop(remove)
 
