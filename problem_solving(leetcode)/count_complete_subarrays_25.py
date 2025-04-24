@@ -14,3 +14,4 @@ class Solution:
                 cnt[nums[right]] = cnt.get(nums[right],0) +1
                 right += 1
 
+        return res
