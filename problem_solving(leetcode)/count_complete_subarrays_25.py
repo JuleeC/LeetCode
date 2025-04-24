@@ -10,4 +10,7 @@ class Solution:
                 cnt[remove] -= 1
                 if cnt[remove] == 0:
                     cnt.pop(remove)
+            while right < len(nums) and len(cnt) < distinct:
+                cnt[nums[right]] = cnt.get(nums[right],0) +1
+                right += 1
 
