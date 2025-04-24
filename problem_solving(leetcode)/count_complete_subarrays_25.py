@@ -6,4 +6,6 @@ class Solution:
         distinct = len(set(nums))
         for left in range(len(nums)):
             if left > 0:
+                remove = nums[left -1]
+                cnt[remove] -= 1
 
