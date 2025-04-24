@@ -3,4 +3,7 @@ class Solution:
         res = 0
         cnt = {}
         right = 0
-        
+        distinct = len(set(nums))
+        for left in range(len(nums)):
+            if left > 0:
+
