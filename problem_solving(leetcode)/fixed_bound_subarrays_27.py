@@ -7,4 +7,9 @@ class Solution(object):
         for i in range(len(nums)):
             if nums[i] < minK or nums[i] > maxK:
                 start = i
+            if nums[i] == maxK:
+                maxi = i
+            if nums[i] == minK:
+                mini = i
+            valid = max(0, min(mini, maxi) - start)
             
