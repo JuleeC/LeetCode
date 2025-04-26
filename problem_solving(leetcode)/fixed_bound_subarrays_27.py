@@ -5,4 +5,6 @@ class Solution(object):
         mini = -1
         maxi = -1
         for i in range(len(nums)):
+            if nums[i] < minK or nums[i] > maxK:
+                start = i
             
