@@ -12,4 +12,5 @@ class Solution(object):
             if nums[i] == minK:
                 mini = i
             valid = max(0, min(mini, maxi) - start)
-            
+            count += valid
+        return count
