@@ -5,6 +5,7 @@ class Solution {
             if((nums[i+2] + nums[i]) * 2 == nums[i+1]) {
                 res++;
             }
-
+        }
+        return res;
     }
 }
