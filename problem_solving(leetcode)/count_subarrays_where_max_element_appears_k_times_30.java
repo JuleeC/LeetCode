@@ -5,6 +5,12 @@ class Solution {
         long ans = 0, start = 0;
         int max = 0;
 
+        for (int end = 0; end < nums.length; end++) {
+            if (nums[end] == maxElement) {
+                max++;
+            }
 
+        }
+        return ans;
     }
 }
