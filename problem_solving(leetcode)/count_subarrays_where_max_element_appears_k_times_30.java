@@ -10,7 +10,10 @@ class Solution {
                 max++;
             }
             while (max == k) {
-
+                if (nums[(int) start] == maxElement) {
+                    max--;
+                }
+                start++;
             }
             ans += start;
         }
