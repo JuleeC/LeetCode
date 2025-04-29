@@ -9,7 +9,10 @@ class Solution {
             if (nums[end] == maxElement) {
                 max++;
             }
+            while (max == k) {
 
+            }
+            ans += start;
         }
         return ans;
     }
