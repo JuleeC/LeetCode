@@ -1,5 +1,10 @@
 class Solution {
 
     public long countSubarrays(int[] nums, int k) {
+        int maxElement = Arrays.stream(nums).max().getAsInt();
+        long ans = 0, start = 0;
+        int max = 0;
 
+
+    }
 }
