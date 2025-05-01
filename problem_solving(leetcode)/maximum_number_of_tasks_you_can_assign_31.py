@@ -21,3 +21,8 @@ class Solution(object):
                         usedPills += 1
                         avail.pop(idx)
 
+                        if canAssign:
+                            left = mid
+                        else:
+                            right = mid - 1
+
