@@ -14,3 +14,7 @@ class Solution(object):
                 if avail[-1] >= t:
                     avail.pop()
                 else:
+                    idx = bisect.bisect_left(avail, t - strength)
+                    if idx == len(avail) or usedPills == pills:
+                        canAssign = False
+                        break
