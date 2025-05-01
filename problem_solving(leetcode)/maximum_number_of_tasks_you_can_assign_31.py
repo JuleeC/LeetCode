@@ -18,3 +18,6 @@ class Solution(object):
                     if idx == len(avail) or usedPills == pills:
                         canAssign = False
                         break
+                        usedPills += 1
+                        avail.pop(idx)
+
