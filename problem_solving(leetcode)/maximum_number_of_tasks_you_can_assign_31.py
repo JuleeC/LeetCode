@@ -10,3 +10,7 @@ class Solution(object):
             avail = workers[-mid:]
             canAssign = True
 
+            for t in reversed(tasks[:mid]):
+                if avail[-1] >= t:
+                    avail.pop()
+                else:
