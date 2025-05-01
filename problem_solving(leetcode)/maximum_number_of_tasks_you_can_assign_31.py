@@ -4,6 +4,9 @@ class Solution(object):
         workers.sort()
         left, right = 0, min(len(tasks), len(workers))
 
-while left < right:
-    mid = (left + right + 1)//2
-    usedPills = 0
+        while left < right:
+            mid = (left + right + 1)//2
+            usedPills = 0
+            avail = workers[-mid:]
+            canAssign = True
+
