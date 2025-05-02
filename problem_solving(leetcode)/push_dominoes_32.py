@@ -14,3 +14,6 @@ class Solution(object):
             elif s[prev] == 'L' and s[curr] == 'R':
             res += '.' * span
             else:
+                res += 'R' * (span // 2) + '.' * (span % 2) + 'L' * (span // 2)
+                prev = curr
+            return res
