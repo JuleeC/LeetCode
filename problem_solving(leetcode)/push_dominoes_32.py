@@ -6,3 +6,8 @@ class Solution(object):
         for curr in range(1, len(s)):
             if s[curr] == '.':
                 continue
+            span = curr - prev - 1
+            if prev > 0:
+                res += s[prev]
+            if s[prev] == s[curr]:
+                res += s[prev] * span
