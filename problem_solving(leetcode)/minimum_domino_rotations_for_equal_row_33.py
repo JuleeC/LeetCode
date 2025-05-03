@@ -5,4 +5,7 @@ class Solution:
 
             if all(i in d for d in zip(A, B)):
 
+                mod = max(A.count(i), B.count(i))
+
+
         return -1
