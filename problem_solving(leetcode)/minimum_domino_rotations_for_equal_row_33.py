@@ -7,5 +7,5 @@ class Solution:
 
                 mod = max(A.count(i), B.count(i))
 
-
+                return len(A) - mod
         return -1
