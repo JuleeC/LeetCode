@@ -8,6 +8,9 @@ class Solution(object):
         cnt = 0
         for a,b in dominoes:
             dummy = tuple(sorted([a,b]))
+            if dummy in seen:
 
+            else:
+                seen[dummy] = 1
         return cnt
 
