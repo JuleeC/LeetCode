@@ -6,5 +6,8 @@ class Solution(object):
         """
         seen = {}
         cnt = 0
+        for a,b in dominoes:
+            dummy = tuple(sorted([a,b]))
 
+        return cnt
 
