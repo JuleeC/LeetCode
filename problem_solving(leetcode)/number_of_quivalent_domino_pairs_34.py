@@ -3,4 +3,8 @@ class Solution(object):
         """
         :type dominoes: List[List[int]]
         :rtype: int
+        """
+        seen = {}
+        cnt = 0
+
 
