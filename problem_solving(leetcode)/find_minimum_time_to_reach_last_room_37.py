@@ -17,3 +17,5 @@ class Solution(object):
         for dr, dc in directions:
             nextRow = currRow + dr
             nextCol = currCol + dc
+            if 0 <= nextRow < n and 0 <= nextCol < m and dp[nextRow][nextCol] == float('inf'):
+                nextTime = max(moveTime[nextRow][nextCol], currTime) + 1
