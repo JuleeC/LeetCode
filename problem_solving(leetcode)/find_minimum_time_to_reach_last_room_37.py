@@ -11,3 +11,5 @@ class Solution(object):
             currTime, currRow, currCol = heapq.heappop(minh)
             if currTime >= dp[currRow][currCol]:
                 continue
+            if currRow == n - 1 and currCol == m - 1:
+                return currTime
