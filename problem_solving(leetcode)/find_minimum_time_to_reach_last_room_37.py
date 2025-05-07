@@ -15,3 +15,5 @@ class Solution(object):
                 return currTime
         dp[currRow][currCol] = currTime
         for dr, dc in directions:
+            nextRow = currRow + dr
+            nextCol = currCol + dc
