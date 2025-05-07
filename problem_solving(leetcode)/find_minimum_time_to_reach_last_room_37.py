@@ -20,3 +20,4 @@ class Solution(object):
             if 0 <= nextRow < n and 0 <= nextCol < m and dp[nextRow][nextCol] == float('inf'):
                 nextTime = max(moveTime[nextRow][nextCol], currTime) + 1
                 heapq.heappush(minh, (nextTime, nextRow, nextCol))
+        return -1
