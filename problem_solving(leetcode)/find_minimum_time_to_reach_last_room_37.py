@@ -13,3 +13,5 @@ class Solution(object):
                 continue
             if currRow == n - 1 and currCol == m - 1:
                 return currTime
+        dp[currRow][currCol] = currTime
+        for dr, dc in directions:
