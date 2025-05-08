@@ -12,3 +12,7 @@ class Solution(object):
                 return currTime
             for dx,dy in direction :
                 nx,ny  = x + dx , y + dy
+                if 0<= nx < n and 0<= ny < m and (nx,ny) not in minTime :
+
+
+        return -1
