@@ -13,6 +13,7 @@ class Solution(object):
             for dx,dy in direction :
                 nx,ny  = x + dx , y + dy
                 if 0<= nx < n and 0<= ny < m and (nx,ny) not in minTime :
-
-
+                    next_time = max(currTime, moveTime[nx][ny]) + i
+                    heapq.heappush(minh, (next_time, nx, ny, 3 - i))
+                    minTime.add((nx, ny))
         return -1
