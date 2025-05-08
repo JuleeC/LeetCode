@@ -6,3 +6,7 @@ class Solution(object):
         heapq.heapify(minh)
         minTime = set((0, 0))
         direction = [(1,0), (0,1), (-1,0), (0,-1)]
+        while minh :
+            currTime, x, y, i  = heapq.heappop(minh)
+            if x == n - 1 and y == m - 1 :
+                return currTime
