@@ -10,3 +10,5 @@ class Solution(object):
             currTime, x, y, i  = heapq.heappop(minh)
             if x == n - 1 and y == m - 1 :
                 return currTime
+            for dx,dy in direction :
+                nx,ny  = x + dx , y + dy
