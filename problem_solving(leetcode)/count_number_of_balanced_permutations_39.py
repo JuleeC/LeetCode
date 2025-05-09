@@ -23,3 +23,4 @@ class Solution(object):
                     dp[i][j] = (dp[i][j] + dp[i-d][j-1]) % mod
         res = dp[halfSum][halfLen]
         res = res * fact[halfLen] % mod * fact[n-halfLen] % mod
+        for cnt in digits: res = res * invFact[cnt] % mod
