@@ -18,3 +18,5 @@ class Solution(object):
         for c in num:
             d = int(c)
             digits[d] += 1
+            for i in range(halfSum, d-1, -1):
+                for j in range(halfLen, 0, -1):
