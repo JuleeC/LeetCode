@@ -20,3 +20,6 @@ class Solution(object):
             digits[d] += 1
             for i in range(halfSum, d-1, -1):
                 for j in range(halfLen, 0, -1):
+                    dp[i][j] = (dp[i][j] + dp[i-d][j-1]) % mod
+        res = dp[halfSum][halfLen]
+        res = res * fact[halfLen] % mod * fact[n-halfLen] % mod
