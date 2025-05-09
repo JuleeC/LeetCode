@@ -15,3 +15,6 @@ class Solution(object):
         dp = [[0]*(halfLen+1) for _ in range(halfSum+1)]
         dp[0][0] = 1
         digits = [0]*10
+        for c in num:
+            d = int(c)
+            digits[d] += 1
