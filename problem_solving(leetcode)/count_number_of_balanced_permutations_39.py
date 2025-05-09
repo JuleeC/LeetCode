@@ -12,3 +12,6 @@ class Solution(object):
         for i in range(1,n+1): invFact[i] = invFact[i-1]*inv[i] % mod
         halfSum = total//2
         halfLen = n//2
+        dp = [[0]*(halfLen+1) for _ in range(halfSum+1)]
+        dp[0][0] = 1
+        digits = [0]*10
