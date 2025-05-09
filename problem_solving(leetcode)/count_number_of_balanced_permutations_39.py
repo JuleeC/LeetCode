@@ -24,3 +24,4 @@ class Solution(object):
         res = dp[halfSum][halfLen]
         res = res * fact[halfLen] % mod * fact[n-halfLen] % mod
         for cnt in digits: res = res * invFact[cnt] % mod
+        return res
