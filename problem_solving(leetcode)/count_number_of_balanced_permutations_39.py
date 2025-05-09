@@ -6,3 +6,6 @@ class Solution(object):
         if total % 2: return 0
         fact = [1]*(n+1)
         inv = [1]*(n+1)
+        invFact = [1]*(n+1)
+        for i in range(1,n+1): fact[i] = fact[i-1]*i % mod
+        for i in range(2,n+1): inv[i] = mod - (mod//i)*inv[mod%i] % mod
