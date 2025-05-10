@@ -4,3 +4,10 @@ class Solution(object):
         zeros1, zeros2 = 0, 0
 
         for num in nums1:
+            if num == 0:
+                zeros1 += 1
+            sum1 += num
+
+        for num in nums2:
+            if num == 0:
+                zeros2 += 1
