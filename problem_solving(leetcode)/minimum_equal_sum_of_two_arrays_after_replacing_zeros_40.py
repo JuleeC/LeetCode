@@ -14,3 +14,6 @@ class Solution(object):
             sum2 += num
 
         if zeros1 == 0 and zeros2 == 0:
+            return sum1 if sum1 == sum2 else -1
+        elif zeros1 == 0:
+            return sum1 if sum2 + zeros2 <= sum1 else -1
