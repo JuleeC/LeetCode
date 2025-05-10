@@ -17,3 +17,6 @@ class Solution(object):
             return sum1 if sum1 == sum2 else -1
         elif zeros1 == 0:
             return sum1 if sum2 + zeros2 <= sum1 else -1
+        elif zeros2 == 0:
+            return sum2 if sum1 + zeros1 <= sum2 else -1
+
