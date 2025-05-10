@@ -11,3 +11,6 @@ class Solution(object):
         for num in nums2:
             if num == 0:
                 zeros2 += 1
+            sum2 += num
+
+        if zeros1 == 0 and zeros2 == 0:
