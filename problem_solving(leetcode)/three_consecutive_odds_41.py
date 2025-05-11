@@ -4,3 +4,7 @@ class Solution(object):
         :type arr: List[int]
         :rtype: bool
         """
+
+        for i in range(len(arr) -2):
+
+        return False
