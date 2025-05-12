@@ -5,3 +5,5 @@ class Solution:
         for i in range(n):
             for j in range(n):
                 for k in range(n):
+                    if i == j or j == k or i == k:
+                        continue
