@@ -11,3 +11,4 @@ class Solution:
 
         for k in s:
             ans= (ans +dp[ord(k) -ord('a') + t]) %mod
+        return ans
