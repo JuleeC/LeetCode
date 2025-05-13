@@ -3,3 +3,5 @@ class Solution:
         mod = 10**9 +7
         ans = 0
 
+        dp = [0] * (t +26)
+        for i in range(26):
