@@ -5,3 +5,5 @@ class Solution:
 
         dp = [0] * (t +26)
         for i in range(26):
+            dp[i] = 1
+        for j in range(26, t + 26):
