@@ -7,3 +7,5 @@ class Solution:
         for i in range(26):
             dp[i] = 1
         for j in range(26, t + 26):
+            dp[j] = (dp[j-26]+dp[j-25]) % mod
+
