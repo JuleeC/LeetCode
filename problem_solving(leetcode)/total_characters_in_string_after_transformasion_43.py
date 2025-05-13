@@ -9,3 +9,5 @@ class Solution:
         for j in range(26, t + 26):
             dp[j] = (dp[j-26]+dp[j-25]) % mod
 
+        for k in s:
+            ans= (ans +dp[ord(k) -ord('a') + t]) %mod
