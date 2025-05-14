@@ -44,3 +44,7 @@ class Solution:
             self, s: str, t: int, nums: List[int]
     ) -> int:
         T = Mat()
+        for i in range(26):
+            for j in range(1, nums[i] + 1):
+                T.a[(i + j) % 26][i] = 1
+
