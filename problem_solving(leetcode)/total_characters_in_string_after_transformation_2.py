@@ -27,3 +27,8 @@ def I() -> Mat:
     return m
 
 
+# matrix exponentiation by squaring
+def quickmul(x: Mat, y: int) -> Mat:
+    ans = I()
+    cur = x
+    while y:
