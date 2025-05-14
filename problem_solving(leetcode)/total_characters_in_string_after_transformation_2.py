@@ -16,3 +16,10 @@ class Mat:
             for j in range(L):
                 for k in range(L):
                     result.a[i][j] = (result.a[i][j] + self.a[i][k] * other.a[k][j]) % MOD
+        return result
+
+
+# identity matrix
+def I() -> Mat:
+    m = Mat()
+    for i in range(L):
