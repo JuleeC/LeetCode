@@ -53,3 +53,9 @@ class Solution:
         f = [0] * 26
         for ch in s:
             f[ord(ch) - ord("a")] += 1
+
+        ans = 0
+        for i in range(26):
+            for j in range(26):
+                ans = (ans + res.a[i][j] * f[j]) % MOD
+
