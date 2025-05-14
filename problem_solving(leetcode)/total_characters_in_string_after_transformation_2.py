@@ -10,3 +10,6 @@ class Mat:
                 for j in range(L):
                     self.a[i][j] = copy_from.a[i][j]
 
+    def __mul__(self, other: "Mat") -> "Mat":
+        result = Mat()
+        for i in range(L):
