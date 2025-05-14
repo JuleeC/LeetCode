@@ -39,3 +39,8 @@ def quickmul(x: Mat, y: int) -> Mat:
     return ans
 
 
+class Solution:
+    def lengthAfterTransformations(
+            self, s: str, t: int, nums: List[int]
+    ) -> int:
+        T = Mat()
