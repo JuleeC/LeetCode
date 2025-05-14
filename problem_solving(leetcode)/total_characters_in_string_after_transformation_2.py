@@ -13,3 +13,6 @@ class Mat:
     def __mul__(self, other: "Mat") -> "Mat":
         result = Mat()
         for i in range(L):
+            for j in range(L):
+                for k in range(L):
+                    result.a[i][j] = (result.a[i][j] + self.a[i][k] * other.a[k][j]) % MOD
