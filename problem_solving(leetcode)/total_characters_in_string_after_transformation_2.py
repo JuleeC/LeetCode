@@ -32,3 +32,10 @@ def quickmul(x: Mat, y: int) -> Mat:
     ans = I()
     cur = x
     while y:
+        if y & 1:
+            ans = ans * cur
+        cur = cur * cur
+        y >>= 1
+    return ans
+
+
