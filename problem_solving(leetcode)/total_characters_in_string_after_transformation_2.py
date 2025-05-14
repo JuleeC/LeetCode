@@ -23,3 +23,7 @@ class Mat:
 def I() -> Mat:
     m = Mat()
     for i in range(L):
+        m.a[i][i] = 1
+    return m
+
+
