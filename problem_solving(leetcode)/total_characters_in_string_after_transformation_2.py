@@ -48,3 +48,8 @@ class Solution:
             for j in range(1, nums[i] + 1):
                 T.a[(i + j) % 26][i] = 1
 
+        res = quickmul(T, t)
+
+        f = [0] * 26
+        for ch in s:
+            f[ord(ch) - ord("a")] += 1
