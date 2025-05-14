@@ -59,3 +59,4 @@ class Solution:
             for j in range(26):
                 ans = (ans + res.a[i][j] * f[j]) % MOD
 
+        return ans
