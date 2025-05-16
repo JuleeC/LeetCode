@@ -13,3 +13,13 @@ class Solution:
                         and dp[j] + 1 > dp[i]
                         and groups[i] != groups[j]
                 ):
+                    dp[i] = dp[j] + 1
+                    prev_[i] = j
+            if dp[i] > dp[max_index]:
+                max_index = i
+
+        ans = []
+        i = max_index
+        while i >= 0:
+            ans.append(words[i])
+            i = prev_[i]
