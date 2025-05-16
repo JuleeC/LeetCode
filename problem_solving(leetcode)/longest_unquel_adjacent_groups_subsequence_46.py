@@ -27,3 +27,7 @@ class Solution:
         return ans
 
     def check(self, s1: str, s2: str) -> bool:
+        if len(s1) != len(s2):
+            return False
+        diff = 0
+        for c1, c2 in zip(s1, s2):
