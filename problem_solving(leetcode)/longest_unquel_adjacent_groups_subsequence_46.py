@@ -9,3 +9,7 @@ class Solution:
         for i in range(1, n):
             for j in range(i):
                 if (
+                        self.check(words[i], words[j])
+                        and dp[j] + 1 > dp[i]
+                        and groups[i] != groups[j]
+                ):
