@@ -33,3 +33,6 @@ class Solution:
         for c1, c2 in zip(s1, s2):
             if c1 != c2:
                 diff += 1
+                if diff > 1:
+                    return False
+        return diff == 1
