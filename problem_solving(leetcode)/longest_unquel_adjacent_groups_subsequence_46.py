@@ -23,3 +23,7 @@ class Solution:
         while i >= 0:
             ans.append(words[i])
             i = prev_[i]
+        ans.reverse()
+        return ans
+
+    def check(self, s1: str, s2: str) -> bool:
