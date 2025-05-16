@@ -6,3 +6,6 @@ class Solution:
         prev_ = [-1] * n
         max_index = 0
 
+        for i in range(1, n):
+            for j in range(i):
+                if (
