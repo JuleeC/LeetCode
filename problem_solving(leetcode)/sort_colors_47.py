@@ -11,4 +11,6 @@ class Solution(object):
                 nums[low], nums[mid] = nums[mid], nums[low]
                 low += 1
                 mid += 1
+            elif nums[mid] == 1:
+                mid += 1
 
