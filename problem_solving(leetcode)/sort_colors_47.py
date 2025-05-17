@@ -8,4 +8,7 @@ class Solution(object):
         high = len(nums) - 1
         while mid <= high:
             if nums[mid] == 0:
+                nums[low], nums[mid] = nums[mid], nums[low]
+                low += 1
+                mid += 1
 
