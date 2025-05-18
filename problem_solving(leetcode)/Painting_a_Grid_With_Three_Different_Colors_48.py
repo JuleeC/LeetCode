@@ -9,3 +9,7 @@ class Solution(object):
         good = []
         pattern = [[] for _ in range(total)]
         for i in range(total):
+            val, valid = i, 1
+            for _ in range(m):
+                pattern[i].append(val % 3)
+                val //= 3
