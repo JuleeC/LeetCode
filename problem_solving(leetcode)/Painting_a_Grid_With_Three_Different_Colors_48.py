@@ -30,5 +30,7 @@ class Solution(object):
             for i in good:
                 total_ways = 0
                 for j in good:
+                    if rowValid[i][j]:
+                        total_ways += dp[col-1][j]
 
         return sum(dp[n]) % mod
