@@ -5,3 +5,7 @@ class Solution(object):
         for _ in range(m):
             total *= 3
         dp = [[0]*total for _ in range(n+1)]
+        rowValid = [[0]*total for _ in range(total)]
+        good = []
+        pattern = [[] for _ in range(total)]
+        for i in range(total):
