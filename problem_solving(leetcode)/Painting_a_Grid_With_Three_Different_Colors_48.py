@@ -13,3 +13,10 @@ class Solution(object):
             for _ in range(m):
                 pattern[i].append(val % 3)
                 val //= 3
+            for j in range(1, m):
+                if pattern[i][j] == pattern[i][j-1]:
+                    valid = 0
+            if valid:
+                good.append(i)
+        for i in good:
+            dp[1][i] = 1
