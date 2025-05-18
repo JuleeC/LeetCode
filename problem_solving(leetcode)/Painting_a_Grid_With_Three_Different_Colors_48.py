@@ -20,3 +20,10 @@ class Solution(object):
                 good.append(i)
         for i in good:
             dp[1][i] = 1
+        for i in good:
+            for j in good:
+                rowValid[i][j] = 1
+                for k in range(m):
+                    if pattern[i][k] == pattern[j][k]:
+                        rowValid[i][j] = 0
+        for col in range(2, n+1):
