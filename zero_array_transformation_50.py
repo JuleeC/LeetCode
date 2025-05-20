@@ -7,3 +7,5 @@ class Solution(object):
         """
 
         diff = [0] * (len(nums) + 1)
+        for l, r in queries:
+            diff[l] += 1
