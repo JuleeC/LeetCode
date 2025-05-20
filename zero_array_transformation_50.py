@@ -15,3 +15,5 @@ class Solution(object):
         for i in range(len(nums)):
             cnt += diff[i]
             if nums[i] > cnt:
+                return False
+        return True
