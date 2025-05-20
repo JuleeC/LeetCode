@@ -13,3 +13,5 @@ class Solution(object):
                 diff[r + 1] -= 1
         cnt = 0
         for i in range(len(nums)):
+            cnt += diff[i]
+            if nums[i] > cnt:
