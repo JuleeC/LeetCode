@@ -6,3 +6,4 @@ class Solution(object):
         :rtype: bool
         """
 
+        diff = [0] * (len(nums) + 1)
