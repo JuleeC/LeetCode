@@ -12,3 +12,4 @@ class Solution(object):
             if r + 1 < len(nums):
                 diff[r + 1] -= 1
         cnt = 0
+        for i in range(len(nums)):
