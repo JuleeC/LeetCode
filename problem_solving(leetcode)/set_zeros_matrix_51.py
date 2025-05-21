@@ -13,4 +13,5 @@ class Solution(object):
             for col in range(len(matrix[0]) - 1, 0, -1):
                 if matrix[row][0] == 0 or matrix[0][col] == 0:
                     matrix[row][col] = 0
-
+            if first_col:
+                matrix[row][0] = 0
