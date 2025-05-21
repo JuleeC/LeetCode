@@ -9,4 +9,5 @@ class Solution(object):
                     matrix[row][0] = 0
                     matrix[0][col] = 0
 
-
+        for row in range(len(matrix) - 1, -1, -1):
+            for col in range(len(matrix[0]) - 1, 0, -1):
