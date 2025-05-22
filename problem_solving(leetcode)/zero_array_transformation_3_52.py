@@ -22,3 +22,4 @@ class Solution(object):
                 count += 1
             if len(assigned) < nums[time]:
                 return -1
+        return len(queries) - count
