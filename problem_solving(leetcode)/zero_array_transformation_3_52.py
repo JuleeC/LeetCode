@@ -14,3 +14,6 @@ class Solution(object):
         for time in range(len(nums)):
             while assigned and assigned[0] < time:
                 heapq.heappop(assigned)
+            while k < len(queries) and queries[k][0] <= time:
+                heapq.heappush(available, -queries[k][1])
+                k += 1
