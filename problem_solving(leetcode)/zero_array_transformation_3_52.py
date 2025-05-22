@@ -10,3 +10,7 @@ class Solution(object):
         available = []
         assigned = []
         count = 0
+        k = 0
+        for time in range(len(nums)):
+            while assigned and assigned[0] < time:
+                heapq.heappop(assigned)
