@@ -20,3 +20,5 @@ class Solution(object):
             while len(assigned) < nums[time] and available and -available[0] >= time:
                 heapq.heappush(assigned, -heapq.heappop(available))
                 count += 1
+            if len(assigned) < nums[time]:
+                return -1
