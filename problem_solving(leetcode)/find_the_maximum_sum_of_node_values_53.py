@@ -20,3 +20,6 @@ class Solution(object):
         current_gain = 0
         count = 0
 
+        for gain in gains:
+            current_gain += gain
+            count += 1
