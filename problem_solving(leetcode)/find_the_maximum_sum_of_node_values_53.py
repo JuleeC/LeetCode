@@ -23,3 +23,5 @@ class Solution(object):
         for gain in gains:
             current_gain += gain
             count += 1
+            # Step 5: Only consider even count of XORs
+            if count % 2 == 0:
