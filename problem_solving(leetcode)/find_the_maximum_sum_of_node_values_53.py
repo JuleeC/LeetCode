@@ -15,3 +15,8 @@ class Solution(object):
         # Step 3: Sort gains descending
         gains.sort(reverse=True)
 
+        # Step 4: Choose best even-number gain sum
+        max_gain = 0
+        current_gain = 0
+        count = 0
+
