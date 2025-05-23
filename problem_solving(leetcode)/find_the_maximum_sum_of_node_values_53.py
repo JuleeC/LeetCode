@@ -27,3 +27,5 @@ class Solution(object):
             if count % 2 == 0:
                 max_gain = max(max_gain, current_gain)
 
+        # Step 6: Return final result
+        return base_sum + max_gain
