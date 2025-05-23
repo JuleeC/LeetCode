@@ -11,3 +11,7 @@ class Solution(object):
 
         # Step 2: Calculate gains for XORing each number
         gains = [(num ^ k) - num for num in nums]
+
+        # Step 3: Sort gains descending
+        gains.sort(reverse=True)
+
