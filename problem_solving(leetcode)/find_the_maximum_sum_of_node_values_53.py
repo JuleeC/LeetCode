@@ -25,3 +25,5 @@ class Solution(object):
             count += 1
             # Step 5: Only consider even count of XORs
             if count % 2 == 0:
+                max_gain = max(max_gain, current_gain)
+
