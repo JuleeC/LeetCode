@@ -32,3 +32,6 @@ class Solution:
                 if indegree[v] == 0:
                     queue.append(v)
 
+            max_color_value = max(max_color_value, max(dp[u]))
+
+        return max_color_value if visited == n else -1
