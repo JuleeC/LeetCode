@@ -6,3 +6,4 @@ class Solution(object):
                 if ch == x:
                     res.append(i)
                     break
+        return res
