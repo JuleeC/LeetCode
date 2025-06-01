@@ -21,3 +21,8 @@ class Solution:
         visited = 0
         max_color_value = 0
 
+        while queue:
+            u = queue.popleft()
+            visited += 1
+
+            for v in graph[u]:
