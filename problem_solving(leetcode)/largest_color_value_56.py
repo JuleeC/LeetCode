@@ -26,3 +26,9 @@ class Solution:
             visited += 1
 
             for v in graph[u]:
+                for c in range(26):
+                    dp[v][c] = max(dp[v][c], dp[u][c] + (1 if c == ord(colors[v]) - ord('a') else 0))
+                indegree[v] -= 1
+                if indegree[v] == 0:
+                    queue.append(v)
+
