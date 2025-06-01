@@ -3,3 +3,6 @@ class Solution(object):
         res = []
         for i, w in enumerate(words):
             for ch in w:
+                if ch == x:
+                    res.append(i)
+                    break
