@@ -21,3 +21,7 @@ class Solution:
                     freq[word] -= pairs
                     freq[rev] -= pairs
 
+        if has_center:
+            ans += 2
+
+        return ans
