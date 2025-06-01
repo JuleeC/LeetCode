@@ -15,3 +15,9 @@ class Solution:
                 if freq[word] == 1:
                     has_center = True
             else:
+                if rev in freq:
+                    pairs = min(freq[word], freq[rev])
+                    ans += pairs * 4
+                    freq[word] -= pairs
+                    freq[rev] -= pairs
+
