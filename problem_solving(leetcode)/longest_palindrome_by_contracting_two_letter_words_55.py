@@ -12,3 +12,6 @@ class Solution:
                 pairs = freq[word] // 2
                 ans += pairs * 4
                 freq[word] -= pairs * 2
+                if freq[word] == 1:
+                    has_center = True
+            else:
