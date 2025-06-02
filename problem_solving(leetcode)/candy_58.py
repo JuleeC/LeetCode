@@ -7,3 +7,8 @@ class Solution(object):
         n = len(ratings)
         candies = [1] * n  # Step 1: Give each child 1 candy initially
 
+        # Step 2: Left to Right pass
+        for i in range(1, n):
+            if ratings[i] > ratings[i - 1]:
+                candies[i] = candies[i - 1] + 1
+
