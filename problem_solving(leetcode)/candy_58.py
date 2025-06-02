@@ -12,3 +12,5 @@ class Solution(object):
             if ratings[i] > ratings[i - 1]:
                 candies[i] = candies[i - 1] + 1
 
+        # Step 3: Right to Left pass
+        for i in range(n - 2, -1, -1):
