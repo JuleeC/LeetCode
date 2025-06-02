@@ -18,3 +18,4 @@ class Solution(object):
                 candies[i] = max(candies[i], candies[i + 1] + 1)
 
         # Step 4: Return total candies
+        return sum(candies)
