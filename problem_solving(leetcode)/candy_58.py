@@ -4,3 +4,6 @@ class Solution(object):
         :type ratings: List[int]
         :rtype: int
         """
+        n = len(ratings)
+        candies = [1] * n  # Step 1: Give each child 1 candy initially
+
