@@ -16,3 +16,7 @@ class Solution:
             if status[i] == 1:
                 canOpen[i] = True
 
+        total = 0
+
+        while queue:
+            i = queue.pop()
