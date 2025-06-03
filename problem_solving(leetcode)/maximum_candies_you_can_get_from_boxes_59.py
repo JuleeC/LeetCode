@@ -31,3 +31,6 @@ class Solution:
                     if hasBox[k] and not visited[k]:
                         queue.append(k)
 
+            for j in containedBoxes[i]:
+                hasBox[j] = True
+                if canOpen[j] and not visited[j]:
