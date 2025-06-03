@@ -20,3 +20,10 @@ class Solution:
 
         while queue:
             i = queue.pop()
+            if visited[i]:
+                continue
+            visited[i] = True
+            total += candies[i]
+
+            for k in keys[i]:
+                if not canOpen[k]:
