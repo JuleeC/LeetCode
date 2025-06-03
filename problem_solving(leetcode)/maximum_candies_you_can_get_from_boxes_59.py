@@ -27,3 +27,7 @@ class Solution:
 
             for k in keys[i]:
                 if not canOpen[k]:
+                    canOpen[k] = True
+                    if hasBox[k] and not visited[k]:
+                        queue.append(k)
+
