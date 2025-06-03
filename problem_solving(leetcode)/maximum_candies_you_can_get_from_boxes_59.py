@@ -34,3 +34,6 @@ class Solution:
             for j in containedBoxes[i]:
                 hasBox[j] = True
                 if canOpen[j] and not visited[j]:
+                    queue.append(j)
+
+        return total
