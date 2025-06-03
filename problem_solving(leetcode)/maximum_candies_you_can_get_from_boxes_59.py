@@ -6,3 +6,5 @@ class Solution:
         visited = [False] * n
         queue = []
 
+        for i in initialBoxes:
+            hasBox[i] = True
