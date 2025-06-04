@@ -7,3 +7,5 @@ class Solution(object):
         for i in range(0, len(word)):
             temp = word[i : i + length]
             if temp > res:
+                res = temp
+        return res
