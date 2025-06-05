@@ -26,3 +26,7 @@ class Solution(object):
 
         result = []
         for ch in baseStr:
+            visited = set()
+            result.append(dfs(ch, visited))
+
+        return ''.join(result)
