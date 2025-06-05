@@ -8,3 +8,10 @@ class Solution(object):
         :type baseStr: str
         :rtype: str
         """
+        adj = defaultdict(list)
+
+        # Step 1: Build the graph
+        for a, b in zip(s1, s2):
+            adj[a].append(b)
+            adj[b].append(a)
+
