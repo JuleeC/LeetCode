@@ -15,3 +15,5 @@ class Solution(object):
             adj[a].append(b)
             adj[b].append(a)
 
+        def dfs(ch, visited):
+            visited.add(ch)
