@@ -21,3 +21,8 @@ class Solution(object):
             for nei in adj[ch]:
                 if nei not in visited:
                     candidate = dfs(nei, visited)
+                    min_ch = min(min_ch, candidate)
+            return min_ch
+
+        result = []
+        for ch in baseStr:
