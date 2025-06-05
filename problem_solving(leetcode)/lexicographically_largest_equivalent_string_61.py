@@ -17,3 +17,7 @@ class Solution(object):
 
         def dfs(ch, visited):
             visited.add(ch)
+            min_ch = ch
+            for nei in adj[ch]:
+                if nei not in visited:
+                    candidate = dfs(nei, visited)
