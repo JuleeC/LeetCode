@@ -22,3 +22,6 @@ class Solution(object):
             while st and st[-1] <= min_char(freq):
                 res.append(st.pop())
 
+        while st:
+            res.append(st.pop())
+
