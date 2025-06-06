@@ -16,3 +16,6 @@ class Solution(object):
                     return ch
             return 'a'
 
+        for ch in s:
+            st.append(ch)
+            freq[ch] -= 1
