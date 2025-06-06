@@ -4,3 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
+
+        freq = Counter(s)
+        st = []
+        res = []
