@@ -19,3 +19,6 @@ class Solution(object):
         for ch in s:
             st.append(ch)
             freq[ch] -= 1
+            while st and st[-1] <= min_char(freq):
+                res.append(st.pop())
+
