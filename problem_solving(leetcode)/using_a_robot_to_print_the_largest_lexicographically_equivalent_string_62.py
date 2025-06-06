@@ -12,3 +12,7 @@ class Solution(object):
         def min_char(freq):
             for i in range(26):
                 ch = chr(ord('a') + i)
+                if freq[ch] > 0:
+                    return ch
+            return 'a'
+
