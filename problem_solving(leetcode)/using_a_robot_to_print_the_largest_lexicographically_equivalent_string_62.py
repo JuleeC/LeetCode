@@ -8,3 +8,7 @@ class Solution(object):
         freq = Counter(s)
         st = []
         res = []
+
+        def min_char(freq):
+            for i in range(26):
+                ch = chr(ord('a') + i)
