@@ -19,3 +19,8 @@ class Solution:
 
         result = []
         indices = []
+        for stack in stacks:
+            indices.extend(stack)
+
+        indices.sort()
+        return ''.join(s[i] for i in indices)
