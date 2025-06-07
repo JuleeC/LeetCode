@@ -13,3 +13,9 @@ class Solution:
                         heapq.heappop(h)
             else:
                 x = ord(c) - ord('a')
+                if not stacks[x]:
+                    heapq.heappush(h, x)
+                stacks[x].append(i)
+
+        result = []
+        indices = []
