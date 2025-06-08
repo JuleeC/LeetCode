@@ -7,3 +7,9 @@ class Solution {
     }
 
     static void helper(int prod, int n, List<Integer> ans) {
+        if (prod > n) return;
+        ans.add(prod);
+
+        }
+    }
+}
