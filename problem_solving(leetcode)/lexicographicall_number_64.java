@@ -9,7 +9,8 @@ class Solution {
     static void helper(int prod, int n, List<Integer> ans) {
         if (prod > n) return;
         ans.add(prod);
-
+        for (int j = 0; j < 10; j++) {
+            helper(prod * 10 + j, n, ans);
         }
     }
 }
