@@ -18,6 +18,10 @@ class Solution {
                 prefix++;
                 k -= subtreeSize;
             } else {
+                prefix *= 10;
+                k--;
+            }
+        }
 
     }
 }
