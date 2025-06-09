@@ -22,6 +22,7 @@ class Solution {
                 k--;
             }
         }
+        return (int) prefix;
 
     }
 }
