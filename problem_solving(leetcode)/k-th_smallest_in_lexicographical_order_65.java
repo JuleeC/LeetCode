@@ -8,6 +8,9 @@ class Solution {
             long current = prefix;
             long next = prefix + 1;
 
+            while (current <= n) {
+                subtreeSize += Math.min(n + 1, next) - current;
+                current *= 10;
 
     }
 }
