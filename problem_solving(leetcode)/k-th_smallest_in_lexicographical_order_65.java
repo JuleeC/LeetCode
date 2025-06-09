@@ -15,6 +15,9 @@ class Solution {
             }
 
             if (subtreeSize <= k) {
+                prefix++;
+                k -= subtreeSize;
+            } else {
 
     }
 }
