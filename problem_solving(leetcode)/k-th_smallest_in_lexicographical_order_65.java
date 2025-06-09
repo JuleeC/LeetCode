@@ -11,6 +11,10 @@ class Solution {
             while (current <= n) {
                 subtreeSize += Math.min(n + 1, next) - current;
                 current *= 10;
+                next *= 10;
+            }
+
+            if (subtreeSize <= k) {
 
     }
 }
