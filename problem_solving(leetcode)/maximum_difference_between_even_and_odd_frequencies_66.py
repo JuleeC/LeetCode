@@ -13,3 +13,6 @@ class Solution:
             if count % 2 == 1:
                 maxi_odd = max(maxi_odd, count)
             else:
+                mini_even = min(mini_even, count)
+
+        return maxi_odd - mini_even
