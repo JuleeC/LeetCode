@@ -11,3 +11,5 @@ class Solution:
             if count == 0:
                 continue
             if count % 2 == 1:
+                maxi_odd = max(maxi_odd, count)
+            else:
