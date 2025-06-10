@@ -8,3 +8,6 @@ class Solution:
             freq[ord(ch) - ord('a')] += 1
 
         for count in freq:
+            if count == 0:
+                continue
+            if count % 2 == 1:
