@@ -49,5 +49,14 @@ class Solution {
             }
         }
 
+        return result == Integer.MIN_VALUE ? 0 : result;
+    }
+}
+
+class MinBIT {
+    static final int MAX = Integer.MAX_VALUE;
+    int n;
+    int[] data;
+
 
 }
