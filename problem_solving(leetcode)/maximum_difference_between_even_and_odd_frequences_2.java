@@ -66,5 +66,10 @@ class MinBIT {
         }
     }
 
+    public void insert(int index, int value) {
+        for (int i = index + 1; i <= n; i += i & -i) {
+            data[i] = Math.min(data[i], value);
+        }
+    }
 
 }
