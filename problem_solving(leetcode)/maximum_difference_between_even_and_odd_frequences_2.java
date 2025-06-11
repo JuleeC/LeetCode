@@ -20,5 +20,12 @@ class Solution {
                     countB[i] = countB[i - 1] + (digit == second ? 1 : 0);
                 }
 
+                MinBIT[][] storage = new MinBIT[2][2];
+                for (int a = 0; a < 2; a++) {
+                    for (int b = 0; b < 2; b++) {
+                        storage[a][b] = new MinBIT(length + 1);
+                    }
+                }
+
 
 }
