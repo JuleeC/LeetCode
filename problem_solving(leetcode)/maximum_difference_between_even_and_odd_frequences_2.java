@@ -27,5 +27,14 @@ class Solution {
                     }
                 }
 
+                for (int j = 0; j <= length; j++) {
+                    if (j >= k) {
+                        int back = j - k;
+                        int pA = parityA[back];
+                        int pB = parityB[back];
+                        int bCount = countB[back];
+                        storage[pA][pB].insert(bCount, diff[back]);
+                    }
+
 
 }
