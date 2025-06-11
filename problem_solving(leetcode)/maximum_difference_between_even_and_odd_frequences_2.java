@@ -36,5 +36,18 @@ class Solution {
                         storage[pA][pB].insert(bCount, diff[back]);
                     }
 
+                    if (j > 0 && countB[j] > 0) {
+                        int altA = 1 - parityA[j];
+                        int curB = parityB[j];
+                        int minPrev = storage[altA][curB].getMin(countB[j] - 1);
+
+                        if (minPrev != MinBIT.MAX) {
+                            result = Math.max(result, diff[j] - minPrev);
+                        }
+                    }
+                }
+            }
+        }
+
 
 }
