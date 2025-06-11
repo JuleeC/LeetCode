@@ -58,5 +58,13 @@ class MinBIT {
     int n;
     int[] data;
 
+    public MinBIT(int length) {
+        this.n = length;
+        this.data = new int[length + 2];
+        for (int i = 0; i < data.length; i++) {
+            data[i] = MAX;
+        }
+    }
+
 
 }
