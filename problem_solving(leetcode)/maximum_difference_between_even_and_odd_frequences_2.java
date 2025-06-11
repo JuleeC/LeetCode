@@ -72,4 +72,11 @@ class MinBIT {
         }
     }
 
+    public int getMin(int index) {
+        int result = MAX;
+        for (int i = index + 1; i > 0; i -= i & -i) {
+            result = Math.min(result, data[i]);
+        }
+        return result;
+    }
 }
