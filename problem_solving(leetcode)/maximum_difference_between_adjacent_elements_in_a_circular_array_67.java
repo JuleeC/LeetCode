@@ -5,5 +5,8 @@ class Solution {
             maxi = Math.max(maxi, Math.abs(nums[i + 1] - nums[i]));
         maxi = Math.max(maxi, Math.abs(nums[nums.length - 1] - nums[0]));
         return maxi;
+                    else left = mid + 1;
+    }
+        return left;
     }
 }
