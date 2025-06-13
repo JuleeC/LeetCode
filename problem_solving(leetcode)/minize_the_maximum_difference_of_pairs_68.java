@@ -6,6 +6,8 @@ class Solution {
         while (left < right) {
             int mid = left + (right - left) / 2, pairs = 0;
             for (int i = 1; i < n; i++) {
+                if (nums[i] - nums[i-1] <= mid) {
+                    pairs++;
 
     }
 }
