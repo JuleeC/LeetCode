@@ -11,6 +11,7 @@ class Solution {
                     i++;
                 }
             }
+            if (pairs >= p) right = mid;
 
     }
 }
