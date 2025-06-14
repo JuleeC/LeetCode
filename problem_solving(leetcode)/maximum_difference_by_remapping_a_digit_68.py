@@ -14,3 +14,4 @@ class Solution:
                 min_s = s.replace(ch, '0')
                 break
 
+        return int(max_s) - int(min_s)
