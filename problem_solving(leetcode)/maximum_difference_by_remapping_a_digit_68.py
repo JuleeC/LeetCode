@@ -4,3 +4,7 @@ class Solution:
 
         max_s = s
         for ch in s:
+            if ch != '9':
+                max_s = s.replace(ch, '9')
+                break
+
