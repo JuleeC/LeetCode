@@ -11,3 +11,6 @@ class Solution:
         min_s = s
         for ch in s:
             if ch != '0':
+                min_s = s.replace(ch, '0')
+                break
+
