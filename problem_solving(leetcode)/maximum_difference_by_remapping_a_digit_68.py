@@ -8,3 +8,6 @@ class Solution:
                 max_s = s.replace(ch, '9')
                 break
 
+        min_s = s
+        for ch in s:
+            if ch != '0':
