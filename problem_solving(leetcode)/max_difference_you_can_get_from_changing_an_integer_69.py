@@ -13,3 +13,4 @@ class Solution:
             minDigit = match2.group() if match2 else None
             min = int(s.replace(minDigit, '0')) if minDigit else num
 
+        return max - min
