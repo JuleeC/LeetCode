@@ -10,4 +10,6 @@ class Solution:
             min = int(s.replace(s[0], '1'))
         else:
             match2 = re.search(r'[2-9]', s)
+            minDigit = match2.group() if match2 else None
+            min = int(s.replace(minDigit, '0')) if minDigit else num
 
