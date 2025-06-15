@@ -6,3 +6,6 @@ class Solution:
         maxDigit = match.group() if match else None
         max = int(s.replace(maxDigit, '9')) if maxDigit else num
 
+        if s[0] != '1':
+            min = int(s.replace(s[0], '1'))
+
