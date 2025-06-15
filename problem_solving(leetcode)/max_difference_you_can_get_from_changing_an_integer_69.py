@@ -8,4 +8,6 @@ class Solution:
 
         if s[0] != '1':
             min = int(s.replace(s[0], '1'))
+        else:
+            match2 = re.search(r'[2-9]', s)
 
