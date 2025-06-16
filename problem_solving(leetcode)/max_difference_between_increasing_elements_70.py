@@ -7,3 +7,4 @@ class Solution:
             if not stack or num < stack[-1][0]:
                 stack.append((num, i))
 
+            if stack and stack[-1][1] < i and num > stack[-1][0]:
