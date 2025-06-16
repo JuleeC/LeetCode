@@ -10,3 +10,4 @@ class Solution:
             if stack and stack[-1][1] < i and num > stack[-1][0]:
                 diff = max(diff, num - stack[-1][0])
 
+        return diff
