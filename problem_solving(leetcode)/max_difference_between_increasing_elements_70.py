@@ -5,3 +5,5 @@ class Solution:
 
         for i, num in enumerate(nums):
             if not stack or num < stack[-1][0]:
+                stack.append((num, i))
+
