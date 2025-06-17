@@ -16,5 +16,11 @@ class Solution {
         while (exp > 0) {
             if ((exp & 1) == 1)
                 result = result * mult % MOD;
+            mult = mult * mult % MOD;
+            exp /= 2;
+        }
+        return result;
+    }
+
 
 }
