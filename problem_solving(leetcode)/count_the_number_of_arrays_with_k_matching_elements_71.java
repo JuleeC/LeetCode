@@ -26,4 +26,9 @@ class Solution {
         return (long) factorial(total) * modInv(factorial(total - select)) % MOD * modInv(factorial(select)) % MOD;
     }
 
+    private long factorial(int n) {
+        if (fact[n] != 0)
+            return fact[n];
+        return fact[n] = (int) (factorial(n - 1) * n % MOD);
+
 }
