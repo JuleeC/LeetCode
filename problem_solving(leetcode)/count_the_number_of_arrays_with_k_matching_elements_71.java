@@ -30,5 +30,11 @@ class Solution {
         if (fact[n] != 0)
             return fact[n];
         return fact[n] = (int) (factorial(n - 1) * n % MOD);
+    }
 
+    private long modInv(long x) {
+        if (x == 1)
+            return x;
+        return MOD - MOD / x * modInv(MOD % x) % MOD;
+    }
 }
