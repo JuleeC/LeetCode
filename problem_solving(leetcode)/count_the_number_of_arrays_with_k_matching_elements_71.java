@@ -4,5 +4,10 @@ class Solution {
             fact[0] = 1;
         long res = m * fastExp(m - 1, n - 1 - k) % MOD * combination(n - 1, n - 1 - k) % MOD;
         return (int) res;
+    }
+
+    int MOD = 1_000_000_007;
+    static long[] inverse = new long[100001];
+    static int[] fact = new int[100001];
 
 }
