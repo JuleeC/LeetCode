@@ -10,4 +10,9 @@ class Solution {
     static long[] inverse = new long[100001];
     static int[] fact = new int[100001];
 
+    private long fastExp(int base, int exp) {
+        long result = 1;
+        long mult = base;
+        while (exp > 0) {
+
 }
