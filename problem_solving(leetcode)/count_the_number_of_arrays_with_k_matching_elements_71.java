@@ -14,5 +14,7 @@ class Solution {
         long result = 1;
         long mult = base;
         while (exp > 0) {
+            if ((exp & 1) == 1)
+                result = result * mult % MOD;
 
 }
