@@ -22,5 +22,8 @@ class Solution {
         return result;
     }
 
+    private long combination(int total, int select) {
+        return (long) factorial(total) * modInv(factorial(total - select)) % MOD * modInv(factorial(select)) % MOD;
+    }
 
 }
