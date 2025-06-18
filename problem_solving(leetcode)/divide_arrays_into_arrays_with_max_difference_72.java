@@ -9,3 +9,7 @@ class Solution {
             arr[i / 3][0] = nums[i];
             arr[i / 3][1] = nums[i + 1];
             arr[i / 3][2] = nums[i + 2];
+        }
+
+    }
+}
