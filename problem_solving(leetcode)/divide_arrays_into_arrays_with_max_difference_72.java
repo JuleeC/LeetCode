@@ -6,3 +6,4 @@ class Solution {
         int[][] arr = new int[n / 3][3];
         for (int i = 0; i < n; i += 3) {
             if (nums[i + 2] - nums[i] > k) return new int[0][];
+            arr[i / 3][0] = nums[i];
