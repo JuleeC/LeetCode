@@ -6,3 +6,4 @@ class Solution:
 
         min_val = nums[0]
 
+        for i in range(1, len(nums)):
