@@ -9,3 +9,5 @@ class Solution:
         for i in range(1, len(nums)):
             if nums[i] - min_val > k:
                 count += 1
+                min_val = nums[i]
+
