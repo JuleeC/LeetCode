@@ -4,3 +4,5 @@ class Solution:
 
         count = 1
 
+        min_val = nums[0]
+
