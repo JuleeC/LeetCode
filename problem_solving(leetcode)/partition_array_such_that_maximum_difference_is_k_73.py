@@ -11,3 +11,4 @@ class Solution:
                 count += 1
                 min_val = nums[i]
 
+        return count
