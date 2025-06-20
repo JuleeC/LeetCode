@@ -15,3 +15,5 @@ class Solution:
                 west += 1
 
             x = abs(north - south)
+            y = abs(east - west)
+            MD = x + y
