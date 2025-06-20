@@ -7,3 +7,7 @@ class Solution:
             c = s[i]
             if c == 'N':
                 north += 1
+            elif c == 'S':
+                south += 1
+            elif c == 'E':
+                east += 1
