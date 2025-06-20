@@ -11,3 +11,6 @@ class Solution:
                 south += 1
             elif c == 'E':
                 east += 1
+            elif c == 'W':
+                west += 1
+
