@@ -19,3 +19,5 @@ class Solution:
             MD = x + y
             dis = MD + min(2 * k, i + 1 - MD)
             ans = max(ans, dis)
+
+        return ans
