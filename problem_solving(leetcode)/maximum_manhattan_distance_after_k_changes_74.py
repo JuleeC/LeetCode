@@ -17,3 +17,5 @@ class Solution:
             x = abs(north - south)
             y = abs(east - west)
             MD = x + y
+            dis = MD + min(2 * k, i + 1 - MD)
+            ans = max(ans, dis)
