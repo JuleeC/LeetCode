@@ -14,3 +14,4 @@ class Solution:
             elif c == 'W':
                 west += 1
 
+            x = abs(north - south)
