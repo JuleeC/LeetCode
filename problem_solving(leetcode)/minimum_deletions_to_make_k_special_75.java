@@ -5,3 +5,6 @@ class Solution {
             freq[word.charAt(i) - 'a']++;
         }
 
+        int minDel = Integer.MAX_VALUE;
+        for (int base = 0; base < 26; base++) {
+            if (freq[base] == 0)
