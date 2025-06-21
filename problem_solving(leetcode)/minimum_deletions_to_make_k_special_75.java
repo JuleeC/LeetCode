@@ -11,3 +11,9 @@ class Solution {
                 continue;
             int del = 0;
             int baseFreq = freq[base];
+
+            for (int comp = 0; comp < 26; comp++) {
+                if (freq[comp] == 0)
+                    continue;
+                if (base == comp)
+                    continue;
