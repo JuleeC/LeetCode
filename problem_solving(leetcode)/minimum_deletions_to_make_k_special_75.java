@@ -8,3 +8,6 @@ class Solution {
         int minDel = Integer.MAX_VALUE;
         for (int base = 0; base < 26; base++) {
             if (freq[base] == 0)
+                continue;
+            int del = 0;
+            int baseFreq = freq[base];
