@@ -21,3 +21,8 @@ class Solution {
                 int compFreq = freq[comp];
                 if (compFreq < baseFreq) {
                     del += compFreq;
+                } else if (compFreq - baseFreq > k) {
+                    del += compFreq - baseFreq - k;
+                }
+            }
+
