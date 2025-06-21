@@ -17,3 +17,7 @@ class Solution {
                     continue;
                 if (base == comp)
                     continue;
+
+                int compFreq = freq[comp];
+                if (compFreq < baseFreq) {
+                    del += compFreq;
