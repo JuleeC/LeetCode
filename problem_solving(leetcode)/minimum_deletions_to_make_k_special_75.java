@@ -26,3 +26,9 @@ class Solution {
                 }
             }
 
+            minDel = Math.min(minDel, del);
+        }
+
+        return minDel;
+    }
+}
