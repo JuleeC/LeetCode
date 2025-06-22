@@ -6,4 +6,5 @@ class Solution:
             ans[i]=s[i*k:(i+1)*k]
         if r>0:
             ans[-1]=s[q*k:]
-
+            ans[-1]+=fill*(k-r)
+        return ans
