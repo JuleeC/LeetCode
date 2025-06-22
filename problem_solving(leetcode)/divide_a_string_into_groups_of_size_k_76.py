@@ -5,3 +5,5 @@ class Solution:
         for i in range(q):
             ans[i]=s[i*k:(i+1)*k]
         if r>0:
+            ans[-1]=s[q*k:]
+
