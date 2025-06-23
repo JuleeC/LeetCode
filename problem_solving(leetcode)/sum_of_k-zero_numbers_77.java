@@ -28,3 +28,9 @@ class Solution {
             x /= 10;
         }
         return n;
+    }
+
+    private boolean kp(long n, int k) {
+        long r = 0, t = n;
+        while (t > 0) {
+            r = r * k + t % k;
