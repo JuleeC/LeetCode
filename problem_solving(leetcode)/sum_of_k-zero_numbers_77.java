@@ -23,3 +23,8 @@ class Solution {
     long gp(long n, boolean o) {
         long x = n;
         if (o) x /= 10;
+        while (x > 0) {
+            n = n * 10 + x % 10;
+            x /= 10;
+        }
+        return n;
