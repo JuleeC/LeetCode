@@ -34,3 +34,8 @@ class Solution {
         long r = 0, t = n;
         while (t > 0) {
             r = r * k + t % k;
+            t /= k;
+        }
+        return n == r;
+    }
+}
