@@ -11,3 +11,10 @@ class Solution {
             }
             for (long i = l; n > 0 && i < l * 10; i++) {
                 long p = gp(i, false);
+                if (kp(p, k)) {
+                    s += p;
+                    n--;
+                }
+            }
+        }
+        return s;
