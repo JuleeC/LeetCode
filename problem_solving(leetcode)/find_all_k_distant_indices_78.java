@@ -13,3 +13,8 @@ class Solution {
                 for (int j = left; j < right; j++) {
                     ans.add(j);
                 }
+            }
+        }
+        return ans;
+    }
+}
