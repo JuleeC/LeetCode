@@ -11,3 +11,5 @@ class Solution {
                 int left = Math.max(right, i - k);
                 right = Math.min(n, i + k + 1);
                 for (int j = left; j < right; j++) {
+                    ans.add(j);
+                }
