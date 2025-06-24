@@ -9,3 +9,5 @@ class Solution {
         for (int i = 0; i < n; i++) {
             if (nums[i] == key) {
                 int left = Math.max(right, i - k);
+                right = Math.min(n, i + k + 1);
+                for (int j = left; j < right; j++) {
