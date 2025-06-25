@@ -19,3 +19,10 @@ class Solution:
                 else:
                     if x >= 0:
                         count += len(nums2)  # zero * anything <= x
+                    # else, 0 * any b > negative => contributes nothing
+            return count
+
+        # Define search bounds
+        low = -10**10
+        high = 10**10
+
