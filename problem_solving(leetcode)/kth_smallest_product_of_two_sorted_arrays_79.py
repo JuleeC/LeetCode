@@ -28,3 +28,6 @@ class Solution:
 
         while low < high:
             mid = (low + high) // 2
+            if count_pairs(mid) < k:
+                low = mid + 1
+            else:
