@@ -6,3 +6,7 @@ class Solution:
         def count_pairs(x: int) -> int:
             count = 0
             for a in nums1:
+                if a > 0:
+                    # a * b <= x => b <= x // a
+                    count += bisect.bisect_right(nums2, x // a)
+                elif a < 0:
