@@ -31,3 +31,6 @@ class Solution:
             if count_pairs(mid) < k:
                 low = mid + 1
             else:
+                high = mid
+
+        return low
