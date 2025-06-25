@@ -10,3 +10,7 @@ class Solution:
                     # a * b <= x => b <= x // a
                     count += bisect.bisect_right(nums2, x // a)
                 elif a < 0:
+                    # a * b <= x => b >= ceil(x / a)
+                    # careful with negatives
+                    target = x // a
+                    if x % a != 0:
