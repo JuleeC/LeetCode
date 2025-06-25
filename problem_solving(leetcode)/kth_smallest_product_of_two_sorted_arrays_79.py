@@ -14,3 +14,8 @@ class Solution:
                     # careful with negatives
                     target = x // a
                     if x % a != 0:
+                        target += 1
+                    count += len(nums2) - bisect.bisect_left(nums2, target)
+                else:
+                    if x >= 0:
+                        count += len(nums2)  # zero * anything <= x
