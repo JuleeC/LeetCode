@@ -26,3 +26,5 @@ class Solution:
         low = -10**10
         high = 10**10
 
+        while low < high:
+            mid = (low + high) // 2
