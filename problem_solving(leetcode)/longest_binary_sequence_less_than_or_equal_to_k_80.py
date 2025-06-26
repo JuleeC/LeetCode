@@ -12,3 +12,5 @@ class Solution:
                     continue
                 value += power
                 ones += 1
+            power <<= 1
+            if power > k:
