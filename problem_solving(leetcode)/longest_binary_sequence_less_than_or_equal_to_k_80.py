@@ -6,3 +6,7 @@ class Solution:
         value = 0
         power = 1
 
+        for i in range(n - 1, -1, -1):
+            if s[i] == '1':
+                if value + power > k:
+                    continue
