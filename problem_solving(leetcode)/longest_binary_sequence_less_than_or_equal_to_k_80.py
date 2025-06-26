@@ -10,3 +10,5 @@ class Solution:
             if s[i] == '1':
                 if value + power > k:
                     continue
+                value += power
+                ones += 1
