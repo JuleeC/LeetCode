@@ -14,3 +14,6 @@ class Solution:
                 ones += 1
             power <<= 1
             if power > k:
+                break
+
+        return zeros + ones
