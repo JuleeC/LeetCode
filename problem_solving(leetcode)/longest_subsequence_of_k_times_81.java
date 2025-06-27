@@ -37,3 +37,8 @@ class Solution {
                         result = combo;
                         candidates[length].add(combo);
                     }
+                }
+            }
+        }
+        return result;
+    }
