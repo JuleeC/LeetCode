@@ -14,3 +14,13 @@ class Solution {
         candidates[1] = new ArrayList<>();
         String result = "";
 
+        for (int i = 0; i < 26; i++)
+        {
+            if (freq[i] >= k)
+            {
+                String ch = "" + (char) ('a' + i);
+                result = ch;
+                candidates[1].add(ch);
+            }
+        }
+
