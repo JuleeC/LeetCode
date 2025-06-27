@@ -24,3 +24,9 @@ class Solution {
             }
         }
 
+        for (int length = 2; length < 8; length++)
+        {
+            candidates[length] = new ArrayList<>();
+            for (String prefix : candidates[length - 1])
+            {
+                for (String suffix : candidates[1])
