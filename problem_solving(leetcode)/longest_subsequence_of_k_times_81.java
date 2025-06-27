@@ -56,3 +56,9 @@ class Solution {
             {
                 if (source[idx] == pat[match]) match++;
                 idx++;
+            }
+            if (match != patLen) return false;
+        }
+        return true;
+    }
+}
