@@ -30,3 +30,10 @@ class Solution {
             for (String prefix : candidates[length - 1])
             {
                 for (String suffix : candidates[1])
+                {
+                    String combo = prefix + suffix;
+                    if (isRepeatedKTimes(chars, combo, k))
+                    {
+                        result = combo;
+                        candidates[length].add(combo);
+                    }
