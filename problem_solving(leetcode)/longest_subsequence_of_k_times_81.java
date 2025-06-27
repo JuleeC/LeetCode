@@ -42,3 +42,10 @@ class Solution {
         }
         return result;
     }
+
+    private boolean isRepeatedKTimes(char[] source, String pattern, int k)
+    {
+        char[] pat = pattern.toCharArray();
+        int sourceLen = source.length;
+        int patLen = pat.length;
+        int idx = 0;
