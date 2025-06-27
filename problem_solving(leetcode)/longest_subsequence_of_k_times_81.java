@@ -49,3 +49,10 @@ class Solution {
         int sourceLen = source.length;
         int patLen = pat.length;
         int idx = 0;
+
+        while (k-- > 0) {
+            int match = 0;
+            while (idx < sourceLen && match < patLen)
+            {
+                if (source[idx] == pat[match]) match++;
+                idx++;
