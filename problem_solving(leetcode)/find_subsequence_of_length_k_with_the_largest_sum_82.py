@@ -8,3 +8,6 @@ class Solution:
 
         # Step 3: Sort selected k elements by original index
         top_k.sort(key=lambda x: x[1])
+
+        # Step 4: Extract the numbers only
+        return [num for num, _ in top_k]
