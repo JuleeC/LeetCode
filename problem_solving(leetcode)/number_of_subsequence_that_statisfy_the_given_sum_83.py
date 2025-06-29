@@ -6,3 +6,5 @@ class Solution:
         nums.sort()
         for i, n in enumerate(nums):
             if 2 * n > target:
+                break
+            j = bisect.bisect(nums, target - n, lo=i)
