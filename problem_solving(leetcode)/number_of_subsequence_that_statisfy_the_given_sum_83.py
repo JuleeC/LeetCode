@@ -3,3 +3,6 @@ class Solution:
 
         mod = 10 ** 9 + 7
         ans = 0
+        nums.sort()
+        for i, n in enumerate(nums):
+            if 2 * n > target:
