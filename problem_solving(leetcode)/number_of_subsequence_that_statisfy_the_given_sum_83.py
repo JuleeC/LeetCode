@@ -8,3 +8,5 @@ class Solution:
             if 2 * n > target:
                 break
             j = bisect.bisect(nums, target - n, lo=i)
+            ans += pow(2, j - i - 1, mod)
+        return ans % mod
