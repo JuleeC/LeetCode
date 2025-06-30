@@ -3,6 +3,6 @@ class Solution:
         from collections import Counter
         if nums == 0:
             return 0
-        freq  
+        freq = Counter(nums)
 
 
