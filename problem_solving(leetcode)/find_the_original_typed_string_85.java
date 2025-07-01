@@ -5,5 +5,6 @@ class Solution {
         for (int i = 1; i < length; i++) {
             if (word.charAt(i - 1) == word.charAt(i)) extras++;
         }
+        return extras + 1;
     }
 }
