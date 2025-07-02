@@ -40,4 +40,9 @@ class Solution {
             for (int j = 1; j < k; ++j) {
                 newDp[j] = prefixSum[j - 1];
 
+                if (j - groupSize - 1 >= 0) {
+                    newDp[j] = (newDp[j] - prefixSum[j - groupSize - 1] + mod) % mod;
+                }
+            }
+
 
