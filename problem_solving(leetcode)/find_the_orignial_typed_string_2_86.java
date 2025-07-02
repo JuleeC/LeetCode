@@ -23,4 +23,8 @@ class Solution {
             totalWays = (totalWays * size) % mod;
         }
 
+        if (groupSizes.size() >= k) {
+            return (int) totalWays;
+        }
+
 
