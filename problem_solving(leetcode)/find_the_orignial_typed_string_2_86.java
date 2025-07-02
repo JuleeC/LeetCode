@@ -5,4 +5,10 @@ class Solution {
     public int possibleStringCount(String word, int k) {
         int n = word.length();
 
+       List<Integer> groupSizes = new ArrayList<>();
+        int currentCount = 1;
+
+        for (int i = 1; i < n; ++i) {
+            if (word.charAt(i) == word.charAt(i - 1)) {
+                currentCount++;
 
