@@ -51,3 +51,11 @@ class Solution {
                 newPrefix[j] = (newPrefix[j - 1] + newDp[j]) % mod;
             }
 
+            dp = newDp;
+            prefixSum = newPrefix;
+        }
+
+        return (int) ((totalWays - prefixSum[k - 1] + mod) % mod);
+    }
+}
+
