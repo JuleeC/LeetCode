@@ -45,4 +45,9 @@ class Solution {
                 }
             }
 
+            int[] newPrefix = new int[k];
+            newPrefix[0] = newDp[0];
+            for (int j = 1; j < k; ++j) {
+                newPrefix[j] = (newPrefix[j - 1] + newDp[j]) % mod;
+            }
 
