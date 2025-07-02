@@ -27,4 +27,10 @@ class Solution {
             return (int) totalWays;
         }
 
+        int[] dp = new int[k];
+        int[] prefixSum = new int[k];
+
+        dp[0] = 1;
+        Arrays.fill(prefixSum, 1); // prefixSum[j] = dp[0] + dp[1] + ... + dp[j]
+
 
