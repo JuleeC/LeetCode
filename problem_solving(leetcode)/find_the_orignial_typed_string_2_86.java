@@ -16,4 +16,11 @@ class Solution {
                 currentCount = 1;
             }
         }
+        groupSizes.add(currentCount); // last group add karna mat bhoolna
+
+        long totalWays = 1;
+        for (int size : groupSizes) {
+            totalWays = (totalWays * size) % mod;
+        }
+
 
