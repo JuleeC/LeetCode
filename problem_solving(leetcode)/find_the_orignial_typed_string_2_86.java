@@ -33,4 +33,11 @@ class Solution {
         dp[0] = 1;
         Arrays.fill(prefixSum, 1); // prefixSum[j] = dp[0] + dp[1] + ... + dp[j]
 
+        for (int i = 0; i < groupSizes.size(); ++i) {
+            int groupSize = groupSizes.get(i);
+            int[] newDp = new int[k];
+
+            for (int j = 1; j < k; ++j) {
+                newDp[j] = prefixSum[j - 1];
+
 
