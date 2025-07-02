@@ -11,4 +11,9 @@ class Solution {
         for (int i = 1; i < n; ++i) {
             if (word.charAt(i) == word.charAt(i - 1)) {
                 currentCount++;
+            } else {
+                groupSizes.add(currentCount);
+                currentCount = 1;
+            }
+        }
 
