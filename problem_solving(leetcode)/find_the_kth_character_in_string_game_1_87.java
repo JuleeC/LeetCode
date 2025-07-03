@@ -7,5 +7,6 @@ class Solution {
                 sb.append((char) ('a' + ((sb.charAt(i) - 'a') + 1) % 26));
             }
         }
+        return sb.charAt(k - 1);
     }
 }
