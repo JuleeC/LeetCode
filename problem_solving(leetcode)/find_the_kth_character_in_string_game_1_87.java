@@ -4,5 +4,8 @@ class Solution {
         while (sb.length() < k) {
             int size = sb.length();
             for (int i = 0; i < size; i++) {
-   }
+                sb.append((char) ('a' + ((sb.charAt(i) - 'a') + 1) % 26));
+            }
+        }
+    }
 }
