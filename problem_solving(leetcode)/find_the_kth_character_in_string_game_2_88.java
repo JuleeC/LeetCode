@@ -6,5 +6,8 @@ class Solution {
         k--;
         for (int i = 63 - Long.numberOfLeadingZeros(k); i >= 0; i--) {
             if (((k >> i) & 1) == 1) {
-   }
+                ans += operations[i];
+            }
+        }
+    }
 }
