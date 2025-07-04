@@ -9,5 +9,6 @@ class Solution {
                 ans += operations[i];
             }
         }
+        return (char) ('a' + (ans % 26));
     }
 }
