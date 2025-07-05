@@ -4,4 +4,5 @@ class Solution:
         d = defaultdict(int)
         for num in arr: d[num]+= 1
 
+        return max(filter(lambda x: d[x] == x, d), default = -1)
 
